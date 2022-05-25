@@ -48,8 +48,8 @@ li {
     padding-left: 34px;
     width: 232px;
     height: 764px;
-    top: 30px;
-    left: 180px;
+    top: 22px;
+    left: -109px;
     z-index: 0;
     background: #FFFFFF;
 
@@ -230,8 +230,128 @@ h3 {
     position: relative;
 }
 
+.products {
+    margin: 96px 0px 96px 0px;
+}
+
+.product_title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.sub_title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.product_list_top {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 48px 0 0 0;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.product_list_bot {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 48px 0 0 0;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: 360px;
+    height: 580px;
+    margin: 0 15px 0 15px;
+    background-color: #F8F8F8;
+}
+
+.product_img {
+    width: 100%;
+    height: 420px;
+    background-color: #F16D7F;
+}
+
+.product_description {
+    padding: 18px;
+}
+
+.title_product {
+
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.description {
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin: 13px 0 26px 0;
+}
+
+.price {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.product_all_block {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 95px;
+}
+
+.button {
+    height: auto;
+    padding: 18px 38px 14px 38px;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    color: #FF6A6A;
+    border: 1px solid #FF6A6A;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.product:first-child {
+    margin-left: 0px;
+}
+
+.product:last-child {
+    margin-right: 0px;
+}
+
+.additional {
+    height: 340px;
+    background-color: #222222;
+}
+
 .footer {
-    margin-top: 100px;
-    height: 100px;
+    height: 450px;
     background-color: #ccc;
+}
+
+.copyright {
+    height: 80px;
+    background-color: #222222;
 }

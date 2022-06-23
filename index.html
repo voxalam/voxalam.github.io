@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,16 +21,19 @@
         <div class="head_menu container">
             <ul class="menu_left">
                 <li><a href="index.html"><img src="img/Group 2.png" alt="Главная"></a></li>
-                <li><a href="catalog.html"><img src="img/Forma 1.png" alt="Поиск"></a></li>
+                <li><a href="#"><img src="img/Forma 1.png" alt="Поиск"></a></li>
             </ul>
             <ul class="menu_right">
-                <li><a class="mega" href="#"><img src="img/Menu.png" alt="Меню"></a>
-                    <!-- MENU -->
-                    <nav class="mega_box">
-                        <div class="mega_item">
+                <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"><img src="img/Menu.png" alt="Меню"></a></button>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                          <div class="card card-body" style="width: 300px;">
+                            <!-- MENU -->
+                    <!-- <nav class="mega_box">
+                        <div class="mega_item"> -->
                             <h5 class="mega_header">MENU</h5>
                             <p class="mega_section">MAN</p>
-                            <a class="mega_link" href="" Accessories></a>
+                            <a class="mega_link" href="">Accessories></a>
                             <a class="mega_link" href="">Bags</a>
                             <a class="mega_link" href="">Denim</a>
                             <a class="mega_link" href="">T-Shirts</a>
@@ -46,8 +50,9 @@
                             <a class="mega_link" href="">T-Shirts</a>
                             <a class="mega_link" href="">Shirts</a>
                             <a class="mega_link" href="">Bags</a>
-                        </div>
-                    </nav>
+                        <!-- </div>
+                    </nav> -->
+                </div></div></div>
                 </li>
                 <li><a href="registration.html"><img src="img/Cart.png" alt="Регистрация"></a></li>
                 <li><a href="cart.html"><img src="img/Product.png" alt="Корзина"></a></li>
@@ -97,7 +102,7 @@
                 <!-- <img class="item_text" src="img/30% OFF FOR WOMEN.png" alt="30%"> -->
             </div>
             <div class="item">
-                <img src="img/Group 37.jpg" alt="For Man">
+                <img class="item_bgc" src="img/Group 37.jpg" alt="For Man">
                 <div class="item_text">
                     <span class="item_text_top">
                         <p class="text_white">HOT DEAL</p>
@@ -109,7 +114,7 @@
                 <!-- <img src="img/HOT DEAL FOR MEN.png" alt="hot deal"> -->
             </div>
             <div class="item">
-                <img src="img/Group 38.jpg" alt="For Kids">
+                <img class="item_bgc" src="img/Group 38.jpg" alt="For Kids">
                 <div class="item_text">
                     <span class="item_text_top">
                         <p class="text_white">NEW ARRIVALS</p>
@@ -122,7 +127,7 @@
             </div>
         </div>
         <div class="filling_bot container">
-            <img src="img/Group 39.jpg" alt="Accesories">
+            <img class="item_bgc" src="img/Group 39.jpg" alt="Accesories">
             <div class="item_text item_text1">
                 <span class="item_text_top">
                     <p class="text_white">LUXIROUS & TRENDY</p>
@@ -267,7 +272,7 @@
             </div>
             <!-- BUTTON PRODUCT -->
             <div class="product_all_block">
-                <button type="button" class="button">Browse All Product</button>
+                <a href="catalog.html"><button type="button" class="button">Browse All Product</button></a>
             </div>
     </section>
     <!-- ADDITONAL -->

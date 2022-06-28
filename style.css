@@ -64,7 +64,7 @@ body {
 
 .container {
 
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -175,6 +175,7 @@ li {
     height: 764px;
     display: flex;
     align-items: center;
+    z-index: 50;
 }
 
 .brpink {
@@ -222,6 +223,7 @@ h3 {
 
 .brtext_bot_black {
     margin-right: 10px;
+    width: 228px;
 }
 
 .baner_image {
@@ -232,6 +234,9 @@ h3 {
 .item {
     position: relative;
     width: 360px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 .item:hover .item_bgc{
     filter: brightness(270%) blur(3px);
@@ -241,7 +246,7 @@ h3 {
 }
 .item_bgc {
     z-index: 0;
-
+width: 100%;
 }
 .item_text:hover .text_pink {
     animation: myAnim 1s ease 0s 1 normal forwards;
@@ -249,16 +254,12 @@ h3 {
 
 .item_text {
     z-index: 1;
-    top: 105px;
-    left: 103px;
     transition: all 1s;
     position: absolute;
 }
 
 .item_text1 {
     z-index: 1;
-    top: 65px;
-    left: 491px;
 
     position: absolute;
 }
@@ -291,6 +292,9 @@ h3 {
 .filling_bot {
     margin-top: 30px;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .products {
@@ -783,9 +787,17 @@ background-color: #f26376;
     width: 360px;
     height: 45px;
     margin-top: 20px;
+    padding: 10px;
 }
 .registration {
     width: 38%;
+    margin-left: 1%;
+}
+.male_female {
+    margin-right: 5px;
+}
+.male_female_text {
+    margin-right: 30px;
 }
 .reg_desc {
     width: 58%;
@@ -817,6 +829,8 @@ background-color: #f26376;
 }
 .registration>label {
     margin-top: 20px;
+    display: flex;
+    align-items: center;
 }
 .reg_desc>p {
     font-family: 'Lato';
@@ -861,4 +875,68 @@ color: #000000;
 }
 .container {
     --bs-gutter-x: 0;
+}
+.card-body {
+    z-index: 100;
+}
+@media (max-width: 768px) {
+
+.container {
+    max-width: 768px;
+}
+.baner_image {
+width: 300px;
+left: 0;
+}
+.baner_left {
+    width: 34%;
+    height: 300px;
+}
+.baner_right {
+    width: 66%;
+    height: 300px;
+}
+.brpink {
+    margin-left: 0;
+}
+.baner {
+    height: 300px;
+}
+.item {
+    width: 31%;
+}
+.item_bgc {
+    width: 100%;
+}
+.additional_item {
+height: 200px;
+}
+.additional {
+    height: auto;
+}
+.additional_block {
+    flex-direction: column;
+    align-items: center;
+}
+.footer {
+    height: auto;
+}
+.footer_block {
+    flex-direction: column;
+    align-items: center;
+}
+.footer_item {
+    height: 300px;
+}
+.product_link_img {
+    width: 100%;
+}
+.product {
+    width: 45%;
+    height: auto;
+    margin: 2%;
+}
+.product_img {
+    height: auto;
+}
 }
